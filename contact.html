@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UFT-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Talanta.co | Specialist Business Consultants</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favi/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favi/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favi/favicon-16x16.png">
+    <link rel="manifest" href="images/favi/site.webmanifest">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <!--Nav-->
+    <header>
+        <a href="index.html" class="logo">Talanta.co</a>
+        <ul class="nav"> 
+            <li><a href="expertise.html">Our Expertise</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="#banner">Contact</a></li>
+            <li><a href="#" class="btn-alt isDisabled">Sign Up</a></li>
+            <li><a href="#" class="isDisabled">Log in</a></li>
+        </ul>
+    </header>
+
+    <!--Banner-->
+    <section class="banner banner-alt" id="banner">
+        <div class="content">
+            <h1>Contact Us</h1>
+            <p>We are here for you when you need us.</p>
+        </div>
+    </section>
+
+    <!--Footer-->
+    <footer>
+        <div class="top-footer">
+            <a href="#banner" class="logo">Talanta.co</a>
+            <p style="font-size: 14px;">Nicol On Main Office Park<br>2 Bruton Road<br>Bryanston<br>2191<br><br>Johannesburg, South Africa</p>
+        </div>
+        <div class="bottom-footer">
+            <ul class="foot"> 
+                <li><a href="#" class="isDisabled">Terms & Conditions</a></li>
+                <li><a href="privacy.html">Privacy & Cookies</a></li>
+                <li><a href="#" class="isDisabled">FAQ</a></li>
+            </ul>
+            <p style="font-size: 14px;">2021 &#169; Copyright by TalantaCo. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!--JS-->
+    <script type="text/javascript">
+        window.addEventListener('scroll', function(){
+            const header = document.querySelector('header');
+            header.classList.toggle("sticky", window.scrollY > 0);
+        })
+    </script>
+</body>
+<html>

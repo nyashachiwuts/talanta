@@ -1,0 +1,29 @@
+/* When the browser is 600px and below */
+@media screen and (max-width: 600px) {
+    section {
+        padding: 80px 32px;
+    } 
+
+    header {
+        padding: 24px 48px;
+    }
+
+    .banner .content h1 {
+        font-size: 1.8em;
+        margin-top: 40px;
+    }
+    .banner .content p {
+        font-size: 1em;
+    }
+
+    .row {
+        position: relative;
+        width: 80%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .row .col-2-5 {
+        padding: 12px;
+
+    }
+  }

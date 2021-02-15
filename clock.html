@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UFT-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Talanta.co | Specialist Business Consultants | Coming Soon!</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favi/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favi/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favi/favicon-16x16.png">
+    <link rel="manifest" href="images/favi/site.webmanifest">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/mobile.css">
+</head>
+
+<body>
+    <!--Nav-->
+    <header>
+        <a href="index.html" class="logo">Talanta.co</a>
+    </header>
+
+    <!--Banner-->
+    <section class="banner" id="banner" style="height: 100vh;">
+        <div class="content">
+            <div class="row" style="font-size: 18px; max-width: 500px;">
+                <div id="days" class="col-2-5"></div>
+                <div id="hours" class="col-2-5"></div>
+                <div id="mins" class="col-2-5"></div>
+                <div id="sec" class="col-2-5"></div>
+            </div>
+            <h1 style="margin-top: 40px;">HEY! WE ARE ALMOST READY TO LAUNCH!</h1>
+            <p>15 FEBRUARY 2021.</p>
+        </div>
+    </section>
+
+    <!--JS-->
+    <script>
+        // Set the date we're counting down to
+        var countDownDate = new Date("Feb 22, 2021").getTime();
+        
+        // Update the count down every 1 second
+        var x = setInterval(function() {
+        
+          // Get today's date and time
+          var now = new Date().getTime();
+        
+          // Find the distance between now and the count down date
+          var distance = countDownDate - now;
+        
+          // Time calculations for days, hours, minutes and seconds
+          var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+          var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+          var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+          var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+        
+          // Display the result in the element with id="timer"
+          document.getElementById("days").innerHTML = days + "d";
+
+          document.getElementById("hours").innerHTML = hours + "h";
+
+          document.getElementById("mins").innerHTML = minutes + "m";
+
+          document.getElementById("sec").innerHTML = seconds + "s ";
+        
+          // If the count down is finished, write some text
+          if (distance < 0) {
+            clearInterval(x);
+            document.getElementById("demo").innerHTML = "We are launching!";
+          }
+        }, 1000);
+        </script>
+</body>
+<html>

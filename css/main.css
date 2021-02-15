@@ -1,0 +1,378 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+* 
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+h2 {
+    font-weight: 500;
+    font-size: 2.2em;
+    margin-bottom: 24px;
+    color: #383838;
+}
+h3 {
+    font-size: 1.4em;
+    font-weight: 500;
+    color: #383838;
+    margin-bottom: 16px;
+}
+h4 {
+    font-size: 1;
+    font-weight: 600;
+    color: #383838;
+    margin-bottom: 16px;
+}
+p {
+    color: #383838;
+    margin-bottom: 16px;
+    font-size: 16px;
+}
+section {
+    padding: 80px 120px;
+}
+
+/*Pointer Events*/
+.isDisabled {
+    color: currentColor;
+    cursor: not-allowed;
+    opacity: 0.6;
+    text-decoration: none;
+}
+
+/*Banners*/
+.banner {
+    position: relative;
+    width: 100%;
+    min-height: 80vh;
+    display: flex;
+    text-align: left;
+    justify-content: left;
+    align-items: center;
+    background: url(../images/background.png);
+    background-size: cover;
+}
+.banner-alt {
+    min-height: 40vh;
+    background: url(../images/background-alt.png);
+    background-size: cover;
+}
+.banner .content {
+    max-width: 900px;
+}
+.banner .content h1 {
+    font-size: 3em;
+    font-weight: 500;
+    line-height: 1.2em;
+    margin-top: 80px;
+    margin-bottom: 24px;
+    color: #fff;
+}
+.banner .content p {
+    font-size: 1.5em;
+    font-weight: 300;
+    margin-bottom: 48px;
+    color: #fff;
+}
+
+/*Buttons*/
+.btn-main {
+    font-size: 1em;
+    padding: 12px 24px;
+    margin-right: 16px;
+    background: unset;
+    border: 1px solid #fff;
+    text-decoration: none;
+    color: #fff;
+    transition: 0.5s;
+}
+.btn-alt {
+    font-size: 1em;
+    padding: 9px 18px;
+    background: unset;
+    border: 2px solid #fff;
+    text-decoration: none;
+    color: #fff;
+    transition: 0.5s;
+}
+.btn-main:hover, .btn-alt:hover {
+    background: #fff;
+    color: #0E0FBA;
+}
+.btn-body {
+    font-size: 0.9em;
+    font-weight: 500;
+    padding: 12px 24px;
+    background: unset;
+    border: 2px solid #0E0FBA;
+    text-decoration: none;
+    color: #0E0FBA;
+    transition: 0.5s;
+}
+.btn-body:hover {
+    border: 2px solid #0E0FBA;
+    background: #0E0FBA;
+    color: #fff; 
+}
+.btn-link {
+    text-decoration: none;
+    color: #fff;
+    transition: 0.5s;
+}
+
+/*Navigation*/
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 24px 120px;
+    height: 80px;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.5s;
+}
+header .logo {
+    text-decoration: none;
+    letter-spacing: -2px;
+    font-weight: 500;
+    font-size: 2em;
+    color: #fff;
+}
+header .nav {
+    position: relative;
+    display: flex;
+    font-size: 15px;
+}
+header .nav li {
+    list-style: none;
+    margin: 0 16px;
+}
+header .nav li a {
+    text-decoration: none;
+    color: #fff;
+}
+header.sticky {
+    background: #0E0FBA;
+    -webkit-box-shadow: 0 7px 30px -10px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 0 7px 30px -10px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 7px 30px -10px rgba(0, 0, 0, 0.5);
+}
+
+/*Homepage*/
+.row {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.row .col-2 {
+    background: #fff;
+    position: relative;
+    text-align: center;
+    padding: 24px;
+    width: 19%;
+
+    -webkit-box-shadow: 0 7px 20px -10px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 0 7px 20px -10px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 7px 20px -10px rgba(0, 0, 0, 0.5);
+}
+.row .col-2-5 {
+    background: #fff;
+    position: relative;
+    width: 23.5%;
+    padding: 24px;
+
+    -webkit-box-shadow: 0 7px 20px -10px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 0 7px 20px -10px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 7px 20px -10px rgba(0, 0, 0, 0.5);
+}
+.row .col-3 {
+    background: #fff;
+    position: relative;
+    width: 32%;
+    padding: 24px;
+
+    -webkit-box-shadow: 0 7px 20px -10px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 0 7px 20px -10px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 7px 20px -10px rgba(0, 0, 0, 0.5);
+}
+.row .col-4 {
+    position: relative;
+    width: 34%;
+    padding: 24px 32px 56px 32px;
+
+    -webkit-box-shadow: 0 7px 20px -10px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 0 7px 20px -10px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 7px 20px -10px rgba(0, 0, 0, 0.5);
+}
+.row .col-4-alt {
+    position: relative;
+    width: 34%;
+}
+.row .col-4-alt .img-box {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    min-height: 300px;
+}
+.row .col-4-alt .img-box img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.row .col-5 {
+    position: relative;
+    height: 500px;
+    width: 49%;
+}
+.row .col-6 {
+    position: relative;
+    width: 64%;
+}
+.row .col-6-alt {
+    position: relative;
+    width: 64%;
+    padding: 24px 32px 56px 32px;
+
+    -webkit-box-shadow: 0 7px 20px -10px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 0 7px 20px -10px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 7px 20px -10px rgba(0, 0, 0, 0.5);
+}
+.row .col-6 .img-box {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    min-height: 300px;
+}
+.row .col-6 .img-box img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.row .col-10 {
+    position: relative;
+    width: 100%;
+    padding: 32px 48px 56px 48px;
+
+    -webkit-box-shadow: 0 7px 20px -10px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 0 7px 20px -10px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 7px 20px -10px rgba(0, 0, 0, 0.5);
+}
+
+/*How It Works*/
+.how {
+    background: url(../images/background-alt-2.png);
+    background-size: cover;
+}
+.how h2 {
+    padding-left: 24px;
+}
+
+/*Latest Projects*/
+.latest h2 {
+    padding-left: 24px;
+}
+.project-heading {
+    position: absolute;
+    padding: 48px;
+    width: 100%;
+    bottom: 0;
+    background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,1));
+}
+.project-heading h3 {
+    color: #fff;
+}
+.project-heading p {
+    color: #fff;
+}
+
+/*Partners*/
+.partners {
+    background: url(../images/background-alt-2.png);
+    background-size: cover;
+}
+.partners h2 {
+    padding-left: 24px;
+}
+
+/*expertise*/
+.expertise {
+    background: url(../images/background-alt-2.png);
+    background-size: cover;
+}
+.expertise h2 {
+    padding-left: 24px;
+}
+.expertise ul {
+    margin-left: 24px;
+}
+
+/*Our Blog*/
+.blog h2 {
+    padding-left: 24px;
+}
+
+
+
+/*Footers*/
+footer {
+    position: relative;
+    background: url(../images/backgroundFooter.png);
+    background-size: cover;
+    padding: 24px 100px;
+}
+footer p {
+    color: #fff;
+}
+footer .foot {
+    position: relative;
+    display: flex;
+}
+footer .foot li {
+    list-style: none;
+    margin: 0 16px;
+}
+footer .foot li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.top-footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 24px 0;
+    font-size: 14px;
+}
+.top-footer .logo {
+    text-decoration: none;
+    letter-spacing: -2px;
+    font-weight: 500;
+    font-size: 2em;
+    color: #fff;
+}
+
+.bottom-footer {
+    border-top: 1px solid #fff;
+    font-size: 14px;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 24px 0;
+    height: auto;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.5s;
+}
